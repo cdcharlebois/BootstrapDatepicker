@@ -18,5 +18,3 @@ node_modules/
 *DS_Store*
 .vscode/
 *.bak
-test Orig/
-test 6.10.5/
