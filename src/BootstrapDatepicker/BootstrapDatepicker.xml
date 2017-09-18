@@ -99,7 +99,23 @@
       <caption>Limit end date</caption>
       <category>General</category>
       <description>Limit selectable dates, format: +3d (3 days ahead), +2w (2 weeks), +4m (4 months), +1y (1 year)</description>
+    </property>
+    <property key="limitStartDate" type="attribute" required="false" isPath="optional" pathType="reference">
+      <caption>Earliest Selectable Date</caption>
+      <category>General</category>
+      <description>The earliest date that a user may select (dates before are greyed out) ** OVERRIDES THE LIMIT START DATE ABOVE **</description>
+      <attributeTypes>
+        <attributeType name="DateTime" />
+      </attributeTypes>
     </property>		
+    <property key="limitEndDate" type="attribute" required="false" isPath="optional" pathType="reference">
+      <caption>Latest Selectable Date</caption>
+      <category>General</category>
+      <description>The latest date that a user may select (dates after are greyed out) ** OVERRIDES THE LIMIT END DATE ABOVE **</description>
+      <attributeTypes>
+        <attributeType name="DateTime" />
+      </attributeTypes>
+    </property>
     <property defaultValue="false" key="readonly" type="boolean">
       <caption>Read-only</caption>
       <category>Display</category>
